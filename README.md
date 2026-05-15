@@ -12,26 +12,26 @@ Go to the [Releases](../../releases/latest) page and grab the file for your plat
 
 | Platform | File |
 |---|---|
-| Windows | `ffdump-windows.exe` |
-| macOS (M1/M2/M3) | `ffdump-mac-arm64` |
-| macOS (older Intel) | `ffdump-mac-intel` |
-| Linux (any distro, x86_64) | `ffdump-linux` |
+| Windows (x86_64) | `ffdump-windows-x86_64.zip` |
+| macOS (M1/M2/M3) | `ffdump-mac-arm64.tar.gz` |
+| Linux (x86_64, any distro) | `ffdump-linux-x86_64.tar.gz` |
+
+Extract the downloaded archive to get the `ffdump` executable.
 
 ---
 
 ## Usage
 
 ### Windows
-Open a terminal in the folder where you saved the `.exe`, then:
-```
-ffdump-windows.exe "https://paste.fitgirl-repacks.site/?abc123#YourKey"
+Extract the `.zip` file, open a terminal in that folder, then run:
+```cmd
+.\ffdump.exe "https://paste.fitgirl-repacks.site/?abc123#YourKey"
 ```
 
 ### macOS / Linux
-Make it executable once, then run it:
+Extract the `.tar.gz` file, open a terminal in that folder, then run:
 ```bash
-chmod +x ffdump-mac-arm64
-./ffdump-mac-arm64 "https://paste.fitgirl-repacks.site/?abc123#YourKey"
+./ffdump "https://paste.fitgirl-repacks.site/?abc123#YourKey"
 ```
 
 > **Important:** always wrap the URL in double quotes — the `#` key will be silently stripped by your terminal otherwise.
